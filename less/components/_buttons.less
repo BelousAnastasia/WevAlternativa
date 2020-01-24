@@ -1,0 +1,89 @@
+@import '../variables/_colors.less';
+
+@laptop-lg: ~"(min-width: 1200px)";
+@laptop-xl: ~"(min-width: 1400px)";
+
+
+.btn{
+    &_feedback{
+        border: 0;
+        background: @feedback-bg-button;
+        box-shadow: 0px 5px 10px rgba(94, 56, 158, 0.35);
+        display: flex;
+        align-items: center;
+        padding: 22px 25px;
+        width: 100%;
+        justify-content: space-between;
+        font-size: 18px;
+        line-height: 22px;
+        color: @white-color;
+        max-width: 240px;
+        > i{
+            font-size: 20px;
+        }
+    }
+    &_call{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: @orange-color;
+        border: 1px solid @orange-color;
+        background: transparent;
+        padding: 11px 24px;
+        @media @laptop-xl{
+            font-size: 16px;
+            line-height: 20px;
+            padding: 13px 26px;
+        }
+    }
+    &_orange{
+        border: 0;
+        background: @orange-color;
+        box-shadow: 0px 4.55927px 9.11854px rgba(239, 139, 84, 0.2);
+        display: flex;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        
+    }
+    &_order_text{
+        font-size: 16px;
+        color: @white-color;
+        padding: 15px;
+        @media @laptop-lg{
+            font-size: 18px;
+        }
+    }
+    &_order_icon{
+        padding: 14px 15px;
+        background: @opacity-orange-color;
+        color: @white-color;
+        > i{
+            font-size: 18px;
+        }
+    }
+    &_info{
+        width: 100%;
+        padding: 13px;
+        color: @white-color;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 16px;
+        border: 2.85853px solid @white-color;
+        border-radius: 4.76421px;
+        background: transparent;
+    }
+    &_gradient{
+        width: 100%;
+        padding: 14px;
+        color: @white-color;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        box-shadow: 0px 4px 4px rgba(222, 155, 85, 0.3);
+        background: @orange-bg-gradient;
+        border: 0;
+    }
+}

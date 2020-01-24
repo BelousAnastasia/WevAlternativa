@@ -1,0 +1,44 @@
+@import '../variables/_colors.less';
+
+// Mode: Desktop
+@desktop: ~"(min-width: 992px)";
+@laptop: ~"(min-width: 1024px)";
+@laptop-lg: ~"(min-width: 1200px)";
+
+.form_group{
+    &:not(:last-child){
+        margin-bottom: 16px;
+    }
+    input{
+        padding: 13px 15px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+        background: @input-bg;
+        border: 0.5px solid @input-border-color;
+        outline: none;
+        &:-ms-input-placeholder{
+            color: @placeholder-color;
+        }
+        @media @laptop-lg{
+            padding: 14px 20px;
+        }
+    }
+    textarea{
+        padding: 13px 15px;
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+        outline: none;
+        background: @input-bg;
+        border: 0.5px solid @input-border-color;
+        &:-ms-input-placeholder{
+            color: @placeholder-color;
+        }
+        resize: none;
+        max-height: 80px;
+        @media @laptop-lg{
+            padding: 14px 20px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import '../variables/_colors.less';
+
+@main-font: Montserrat;
+// Mode: Desktop
+@desktop: ~"(min-width: 992px)";
+@laptop: ~"(min-width: 1024px)";
+@laptop-lg: ~"(min-width: 1200px)";
+
+body *{
+    font-family: @main-font, sans-serif;
+}
+.bold_text{
+    font-weight: 700;
+}
+.font_size_13{
+    font-size: 13px;
+    line-height: 15px;
+    @media @laptop-lg{
+        font-size: 22.6667px;
+        line-height: 28px;
+    }
+}
+.orange_text{
+    color: @orange-color;
+}
+.green_text{
+    color: @green-color;
+}
